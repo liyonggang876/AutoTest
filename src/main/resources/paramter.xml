@@ -1,0 +1,12 @@
+<suite name="parameter">
+    <test name="param">
+
+        <classes>
+            <parameter name="name" value="zhangsan"/>
+            <parameter name="age" value="10"/>
+            <class name="com.cusre.testng.paramter.ParamterTest"/>
+        </classes>
+
+    </test>
+
+</suite>

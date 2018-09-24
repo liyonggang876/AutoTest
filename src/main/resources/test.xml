@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name ="test">
+    <test name="login">
+        <classes>
+            <class name="com.cusre.testng.suit.SuiteConfig"/>
+            <class name="com.cusre.testng.suit.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="pay">
+        <classes>
+            <class name="com.cusre.testng.suit.SuiteConfig"/>
+            <class name="com.cusre.testng.suit.PayTest"/>
+        </classes>
+    </test>
+
+</suite>

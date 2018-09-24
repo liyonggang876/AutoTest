@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="sutiename">
+    <test name="runall">
+        <classes>
+            <class name="com.cusre.testng.groups.GroupsOnClass1"/>
+            <class name="com.cusre.testng.groups.GroupOnClass2"/>
+            <class name="com.cusre.testng.groups.GroupOnClass3"/>
+        </classes>
+    </test>
+
+    <test name="onlyrunstu">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.cusre.testng.groups.GroupsOnClass1"/>
+            <class name="com.cusre.testng.groups.GroupOnClass2"/>
+            <class name="com.cusre.testng.groups.GroupOnClass3"/>
+        </classes>
+    </test>
+</suite>
