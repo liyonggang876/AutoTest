@@ -6,7 +6,7 @@
     <test name="这些是测试模块">
         <classes>
             <class name="com.test.extend.demo.TestMethodDemo"/>
-            <class name="com.http.demo.cookies.MyCookiesForPost"/>
+            <!--<class name="com.http.demo.cookies.MyCookiesForPost"/>-->
 
         </classes>
     </test>
