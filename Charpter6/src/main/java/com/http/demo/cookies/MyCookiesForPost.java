@@ -39,6 +39,7 @@ public class MyCookiesForPost {
         String uri = bundle.getString("getCookies.uri");
         String testUrl = this.url+uri;
 
+
 //        测试逻辑代码书写
         HttpGet get = new HttpGet(testUrl);
         DefaultHttpClient client = new DefaultHttpClient();
@@ -63,7 +64,10 @@ public class MyCookiesForPost {
     public void testPostMethod() throws IOException {
         String uri = bundle.getString("test.post.with.cookies");
         String testUrl = this.url + uri;
+        String res = HttpClinet.doPost(testUrl,this.store);
+        System.out.println("res=" + res);
         //声明client
+        /*
         DefaultHttpClient client = new DefaultHttpClient();
 
 
@@ -94,8 +98,9 @@ public class MyCookiesForPost {
         String success = (String)resultJson.get("huhansan");
         String status = (String)resultJson.get("status");
 
-        //Assert.assertEquals("success",success);
+        Assert.assertEquals("success",success);
         Reporter.log("自己的日子111");
-        Assert.assertEquals("2",status);
+        Assert.assertEquals("1",status);
+        */
     }
 }

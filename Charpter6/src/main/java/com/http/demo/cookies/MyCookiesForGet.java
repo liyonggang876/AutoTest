@@ -9,6 +9,7 @@ import org.apache.http.util.EntityUtils;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import javax.xml.bind.SchemaOutputResolver;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
@@ -58,6 +59,9 @@ public class MyCookiesForGet {
     public void testGetWithCookies() throws IOException {
         String uri = bundle.getString("test.get.with.cookies");
         String testUrl = this.url+uri;
+        String res = HttpClinet.doGet(testUrl,this.store);
+
+        /*
         HttpGet get = new HttpGet(testUrl);
         DefaultHttpClient client = new DefaultHttpClient();
 
@@ -73,8 +77,13 @@ public class MyCookiesForGet {
         if(statusCode == 200){
             String result = EntityUtils.toString(response.getEntity(),"utf-8");
             System.out.println("aaaa" + result);
+        }else{
+            System.out.println("aaaaaaaa");
         }
+        */
+
     }
+
 
 
 }
