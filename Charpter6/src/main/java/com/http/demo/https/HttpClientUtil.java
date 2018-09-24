@@ -75,7 +75,7 @@ public class HttpClientUtil {
             httpGet.addHeader("token", token);
             //httpGet.addHeader("Content-Type", ContentType);
             httpGet.addHeader("timestamp", "121212");
-
+            //httpClient
             HttpResponse response = httpClient.execute(httpGet);  
             if(response != null){  
                 HttpEntity resEntity = response.getEntity();  
